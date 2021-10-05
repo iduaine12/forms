@@ -1,0 +1,75 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+    115deg,
+    rgba(58, 58, 158, 0.8),
+    rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    background-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#survey-form {
+    background: rgba(0, 0, 0, 0.6);
+    width: 700px;
+    margin: 0px auto;
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+}
+
+
+.survey-items {
+    margin: 20px 50px;
+}
+
+label {
+    display: block;
+}
+
+#number-label::after {
+    content: "(Optional)";
+    font-size: 12px;
+}
+
+.survey-input {
+    width: 600px;
+    padding: 9px 10px;
+    border-radius: 5px;
+}
+
+.improve::after {
+    content: " (Check all that apply)";
+    font-size: 12px;
+}
+
+.text-area {
+    width: 600px;
+    padding: 9px 10px;
+}
+
+.submit {
+    width: 620px;
+    padding: 15px;
+    color: white;
+    background: #00b868;
+    font-size: 16px;
+    border: 1px solid #00b868;
+}
